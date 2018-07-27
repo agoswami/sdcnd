@@ -59,7 +59,6 @@ def region_of_interest(img, vertices):
     masked_image = cv2.bitwise_and(img, mask)
     return masked_image
 
-
 def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
     """
     NOTE: this is the function you might want to use as a starting point once you want to 
@@ -101,12 +100,12 @@ def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
             #print (center)
             
             # slope is between 0.2 to 0.8 add to right list
-            if (slope > 0.20) and (slope < 0.80):
+            if (slope > 0.40) and (slope < 0.80):
                 right_slope.append(slope)
                 right_center.append(center)
                 
             # slope is between -0.2 and -0.8 add to left list    
-            elif (slope < (-0.20)) and (slope > (-0.80)):
+            elif (slope < (-0.40)) and (slope > (-0.80)):
                 left_slope.append(slope)
                 left_center.append(center)
                 
@@ -118,35 +117,54 @@ def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
     average_left_slope = np.sum(left_slope)/len(left_slope)
     #print ("average_left_slope",average_left_slope)
     
-    # Find the average center for right lines and average slope for left lines
-    average_right_center = np.divide(np.sum(right_center,axis=0),len(right_center))
-    #print (average_right_center)
-    average_left_center = np.divide(np.sum(left_center,axis=0),len(left_center))
-    #print (average_left_center)
+    average_right_center = []
+    average_left_center = []
+    
+    
+    #print("#",right_center)
+    #print("#",left_center)
+    
+    
+    if(len(right_center) > 0 and len(left_center) > 0):
+        # Find the average center for right lines and average slope for left lines
+        average_right_center = np.divide(np.sum(right_center,axis=0),len(right_center))
+        
+        #print (left_center_sum)
+        average_left_center = np.divide(np.sum(left_center,axis=0),len(left_center))
+    else: 
+        average_right_center = []
+        
+        average_left_center = []
+        
     
     # Use the height of center of image, average center and average slope to get
     # left line segment end points and right line segment end points
     y_half = 0.6 * img.shape[0]
     y_max = 0.9 * img.shape[0]
     
-    global x_left_half 
-    global x_right_half
+    x_left_half = 'nan'
+    x_right_half = 'nan'
+    x_left_max = 0.0
+    x_right_max = 0.0
+    
+    if len(average_left_center) >= 1:
         
-    if not average_left_center != 'NaN':
+        #print(average_left_center)
         # left coordinates x_left_max and y_max
         x_left_max = average_left_center[0] + (y_max - average_left_center[1])/average_left_slope
     
         # left coordinates x_left_half and y_half
         x_left_half = average_left_center[0] + (y_half - average_left_center[1])/average_left_slope
     
-    if not average_right_center != 'NaN':
+    if len(average_right_center) >= 1:
+                                                      
         # left coordinates x_right_max and y_max
         x_right_max = average_right_center[0] + (y_max - average_right_center[1])/average_right_slope
     
         # left coordinates x_right_max and y_max
         x_right_half = average_right_center[0] + (y_half - average_right_center[1])/average_right_slope
     
-    if x_left_half != 'NaN' and x_right_half != 'NaN':
+    if x_left_half != 'nan' and x_right_half != 'nan':
         # draw overlay left line segment
         cv2.line(img, (int(x_left_half), int(y_half)), (int(x_left_max), int(y_max)), color, thickness)
     
