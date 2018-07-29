@@ -73,8 +73,13 @@ There are three parts to the reflection:
                     ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
                  1. White Car Lane Switch
                     ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
-        1. Building a pipeline to process images which are part of frames of a video, 
-        1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
+        1. Building a pipeline to process images which are part of frames of a video.
+           1. Steps to process video frames are same as steps to process images specified above.
+        1. Test the pipeline on couple of video files provided as project input.
+           1. Output of video1 
+             ![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.mp4) 
+           1. Output of video2
+             [Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)
         1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
 
 
