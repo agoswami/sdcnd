@@ -60,18 +60,18 @@ There are three parts to the reflection:
               1. perform a superimpose of hough transform image(lane lines) on original image
               1. perforn RGB conversion to BGR to satify the cv2.imwrite parameter condition.
               1. write out the superimposed image in to a file.
-           1. Solid White Curve
-        ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
-           1. Solid White Right
-        ![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteRight.jpg)
-           1. Solid Yellow Curve
-        ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve.jpg)
-           1. Solid Yellow Curve2
-        ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve2.jpg)
-           1. Solid Yellow Left
-        ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
-           1. White Car Lane Switch
-        ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
+                 1. Solid White Curve
+                    ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
+                 1. Solid White Right
+                    ![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteRight.jpg)
+                 1. Solid Yellow Curve
+                    ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve.jpg)
+                 1. Solid Yellow Curve2
+                    ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve2.jpg)
+                 1. Solid Yellow Left
+                    ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
+                 1. White Car Lane Switch
+                    ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
         1. Building a pipeline to process images which are part of frames of a video, 
         1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
         1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
