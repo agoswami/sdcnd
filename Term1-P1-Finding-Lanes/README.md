@@ -25,9 +25,7 @@ Reflection
 There are three parts to the reflection:
  1. Description of the pipeline
 
- 1. Project is completed in jupyter notebook. 
-
-    1.  Jupyter Notebook Steps: 
+    1. Project is completed in jupyter notebook. Following are the Jupyter Notebook Steps
         1. Importing required python packages, 
         1. Reading a test image, Enhancing the python helper function, 
         1. Testing on images provided as part of project,
