@@ -16,7 +16,7 @@ To complete the project, I have sumitted two files.
 
 **2.** File containing brief writeup [README.md](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/README.md)
 
-Specifications for submitting the project defined in the in the [project rubric](https://review.udacity.com/#!/rubrics/322/view) are met.
+Specifications for submitting the project defined in the [project rubric](https://review.udacity.com/#!/rubrics/322/view) are met.
 
 
 Reflection
