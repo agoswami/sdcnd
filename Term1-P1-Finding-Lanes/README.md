@@ -33,11 +33,17 @@ There are three parts to the reflection:
         ![Test Image](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/solidWhiteRight.jpg)
         1. Enhancing the python helper function.
         1. Testing on images provided as part of project. Following are the image outputs.
+           1. Solid White Curve
         ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
+           1. Solid White Right
         ![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteRight.jpg)
+           1. Solid Yellow Curve
         ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve.jpg)
+           1. Solid Yellow Curve2
         ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve2.jpg)
+           1. Solid Yellow Left
         ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
+           1. White Car Lane Switch
         ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
         1. Building a pipeline to process images which are part of frames of a video, 
         1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
