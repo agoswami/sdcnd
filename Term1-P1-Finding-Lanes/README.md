@@ -28,11 +28,17 @@ There are three parts to the reflection:
  1. Description of the pipeline
 
     1. Project is completed in jupyter notebook. Following are the Jupyter Notebook Steps
-        1. Importing required python packages, 
-        1. Reading a test image, 
+        1. Importing required python packages.
+        1. Reading a test image. 
         ![Test Image](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/solidWhiteRight.jpg)
-        1. Enhancing the python helper function, 
-        1. Testing on images provided as part of project,
+        1. Enhancing the python helper function.
+        1. Testing on images provided as part of project. Following are the image outputs.
+        ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
+        ![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteRight.jpg)
+        ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve.jpg)
+        ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve2.jpg)
+        ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
+        ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
         1. Building a pipeline to process images which are part of frames of a video, 
         1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
         1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
