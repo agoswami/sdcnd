@@ -60,6 +60,7 @@ There are three parts to the reflection:
               1. perform a superimpose of hough transform image(lane lines) on original image
               1. perforn RGB conversion to BGR to satify the cv2.imwrite parameter condition.
               1. write out the superimposed image in to a file.
+              1. following is the output super-imposed images on test images provided.
                  1. Solid White Curve
                     ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
                  1. Solid White Right
