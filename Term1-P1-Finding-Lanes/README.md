@@ -14,7 +14,7 @@ To complete the project, I have sumitted three files.
 
 **1.** File containing project code in form of jupyter notebook file [P1.ipynb](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/P1.ipynb)
 
-**2.** File containing project code in form of python file [Term1-P1-Finding-Lanes.py](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/Term1-P1-Finding-Lanes.py)
+**2.** File containing project code in form of pure python code [Term1-P1-Finding-Lanes.py](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/Term1-P1-Finding-Lanes.py)
 
 **3.** File containing brief writeup [README.md](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/README.md)
 
