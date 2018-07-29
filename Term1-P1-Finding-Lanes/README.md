@@ -43,7 +43,7 @@ There are three parts to the reflection:
            ```python 
            def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
            ```
-           1. Input arguments are original image, list of hough transform lines, overlay color and thickness
+           1. Input arguments of draw_lines = original image, list of hough transform lines, overlay color, thickness
            1. Iterate of over each line in list of lines. Find center and slope of lines aligned with right and left lanes                   and add them of their own respective lists.
            1. Calculate average of list of center and slopes for left and right lane lines.
            1. Assuming y of right and left lines to be 0.6 of max for y-mid and 0.9 of max for y-max. 
