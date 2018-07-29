@@ -49,7 +49,17 @@ There are three parts to the reflection:
            1. Assuming y of right and left lines to be 0.6 of max for y-mid and 0.9 of max for y-max. 
            1. Calculate the x (mid and max) of both right and left lines, using line extrapolation formula. When the list of                 lines are non-empty. If list of lines are empty then skip line generation.
            
-        1. Testing on images provided as part of project. Following are the image outputs.
+        1. Testing on images provided as part of project, through image processing pipeline. Following are the image outputs.
+           1. Following are steps to process image, which is same for video image processing as well
+              1. read the image
+              1. perform grayscaling of image
+              1. perform gaussian blur to reduce image noise.
+              1. perform canny transform to highlight the edges (lanes).
+              1. perform croppping of images to only region of interest.
+              1. perform a hough transform to find all the lines of interest (its find all overlapping lines, conditions to choose set of overlapping is defined in params to hough_lines function).
+              1. perform a superimpose of hough transform image(lane lines) on original image
+              1. perforn RGB conversion to BGR to satify the cv2.imwrite parameter condition.
+              1. write out the superimposed image in to a file.
            1. Solid White Curve
         ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
            1. Solid White Right
