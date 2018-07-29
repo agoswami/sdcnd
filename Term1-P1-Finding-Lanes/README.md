@@ -39,7 +39,16 @@ There are three parts to the reflection:
            ```
         1. Reading a test image. 
         ![Test Image](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/solidWhiteRight.jpg)
-        1. Enhancing the python helper function.
+        1. Enhancing the python helper function. Following are the steps involved in enhancing the method 
+           ```python 
+           def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
+           ```
+           1. Input arguments are original image, list of hough transform lines, overlay color and thickness
+           1. Iterate of over each line in list of lines. Find center and slope of lines aligned with right and left lanes                   and add them of their own respective lists.
+           1. Calculate average of list of center and slopes for left and right lane lines.
+           1. Assuming y of right and left lines to be 0.6 of max for y-mid and 0.9 of max for y-max. 
+           1. Calculate the x (mid and max) of both right and left lines, using line extrapolation formula. When the list of                 lines are non-empty. If list of lines are empty then skip line generation.
+           
         1. Testing on images provided as part of project. Following are the image outputs.
            1. Solid White Curve
         ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
