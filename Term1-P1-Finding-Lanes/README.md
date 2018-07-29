@@ -20,7 +20,8 @@ Reflection
 
 There are three parts to the reflection:
 
-Description of the pipeline:
+1. Description of the pipeline
+
  **a.** Project is completed in jupyter notebook. 
 
  **b.** Jupyter Notebook Steps: 
