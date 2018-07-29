@@ -23,7 +23,6 @@ Reflection
 ---
 
 There are three parts to the reflection:
-
  1. Description of the pipeline
 
  1. Project is completed in jupyter notebook. 
