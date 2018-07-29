@@ -3,7 +3,7 @@
 
 <img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
-##Overview
+## Overview
 ---
 
 When we drive, we use our eyes to decide where to go.  The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle.  Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.
@@ -24,7 +24,7 @@ Reflection
 
 There are three parts to the reflection:
 
-##1. Description of the pipeline
+## 1. Description of the pipeline
 
  **a.** Project is completed in jupyter notebook. 
 
@@ -37,9 +37,9 @@ There are three parts to the reflection:
   Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
 
 
-##2. Identify any shortcomings
+## 2. Identify any shortcomings
 
-##3. Suggest possible improvements
+## 3. Suggest possible improvements
 
 We encourage using images in your writeup to demonstrate how your pipeline works.  
 
