@@ -21,10 +21,10 @@ Reflection
 There are three parts to the reflection:
 
 Description of the pipeline:
-a. Project is completed in jupyter notebook. 
+ **a.** Project is completed in jupyter notebook. 
 
-b. Jupyter Notebook Steps: 
-  Importing required python packages, 
+ **b.** Jupyter Notebook Steps: 
+   **i.** Importing required python packages, 
   Reading a test image, Enhancing the python helper function, 
   Testing on images provided as part of project,
   Building a pipeline to process images which are part of frames of a video, 
