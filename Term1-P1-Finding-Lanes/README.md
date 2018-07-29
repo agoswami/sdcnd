@@ -24,22 +24,22 @@ Reflection
 
 There are three parts to the reflection:
 
-## 1. Description of the pipeline
+ 1. Description of the pipeline
 
- #### **a.** Project is completed in jupyter notebook. 
+ 1. Project is completed in jupyter notebook. 
 
- ##### **b.** Jupyter Notebook Steps: 
-   ###### **i.** Importing required python packages, 
-  ###### **ii.** Reading a test image, Enhancing the python helper function, 
-  ###### **iii.** Testing on images provided as part of project,
-  ###### **iv.** Building a pipeline to process images which are part of frames of a video, 
-  ###### **v.** Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
-  ###### **v.** Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
+   1.  Jupyter Notebook Steps: 
+      1. Importing required python packages, 
+      1. Reading a test image, Enhancing the python helper function, 
+      1. Testing on images provided as part of project,
+      1. Building a pipeline to process images which are part of frames of a video, 
+      1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
+      1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
 
 
-## 2. Identify any shortcomings
+1. Identify any shortcomings
 
-## 3. Suggest possible improvements
+1. Suggest possible improvements
 
 We encourage using images in your writeup to demonstrate how your pipeline works.  
 
