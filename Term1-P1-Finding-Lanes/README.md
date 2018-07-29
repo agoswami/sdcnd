@@ -28,13 +28,13 @@ There are three parts to the reflection:
 
  1. Project is completed in jupyter notebook. 
 
-   1.  Jupyter Notebook Steps: 
-      1. Importing required python packages, 
-      1. Reading a test image, Enhancing the python helper function, 
-      1. Testing on images provided as part of project,
-      1. Building a pipeline to process images which are part of frames of a video, 
-      1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
-      1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
+    1.  Jupyter Notebook Steps: 
+        1. Importing required python packages, 
+        1. Reading a test image, Enhancing the python helper function, 
+        1. Testing on images provided as part of project,
+        1. Building a pipeline to process images which are part of frames of a video, 
+        1. Test the pipeline on couple of video files provided as project input [Video1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4) [Video2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.mp4), 
+        1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
 
 
 1. Identify any shortcomings
