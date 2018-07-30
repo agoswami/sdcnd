@@ -77,7 +77,7 @@ There are three parts to the reflection:
            1. Steps to process video frames are same as steps to process images specified above.
         1. Test the pipeline on couple of video files provided as project input.
            1. Download output of video1 
-              [![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.mp4)]
+              [![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.png)](https://youtu.be/z1puf_4EOHA)
            1. Download output of video2
               [![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)]
         1. Finally test the pipeline on challenge video, here you can download it.
