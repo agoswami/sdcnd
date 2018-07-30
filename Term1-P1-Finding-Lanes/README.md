@@ -77,9 +77,11 @@ There are three parts to the reflection:
            1. Steps to process video frames are same as steps to process images specified above.
         1. Test the pipeline on couple of video files provided as project input.
            1. Output of video1 
-             <video width="960" height="540" controls>
+           HTML("""
+<video width="960" height="540" controls>
   <source src="https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.mp4">
-</video> 
+</video>
+""".format(white_output))
            1. Output of video2
              ![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)
         1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
