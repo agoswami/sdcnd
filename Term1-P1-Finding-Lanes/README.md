@@ -85,14 +85,16 @@ There are three parts to the reflection:
 
 
 1. Identify any shortcomings
+   1. It does not identify lanes with curved lines, we only overlay straight lines.
+   1. It only identifies lanes which are clearly marked.
+   1. It does not idenity lanes in city roads.
+   1. It does not generated overlay lines, when frame data is missing for a little time period.
 
 1. Suggest possible improvements
-
-We encourage using images in your writeup to demonstrate how your pipeline works.  
-
-All that said, please be concise!  We're not looking for you to write a book here: just a brief description.
-
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup. Here is a link to a [writeup template file](https://github.com/udacity/CarND-LaneLines-P1/blob/master/writeup_template.md). 
+   1. Possibly predict lane lines, when frame data is not available.
+   1. Possibly generate lane line, when lanes are not clearly marked.
+   1. Possibly generate lane lines as curved lines instead of staight lines.
+   
 
 
 The Project
