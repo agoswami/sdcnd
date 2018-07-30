@@ -78,10 +78,10 @@ There are three parts to the reflection:
         1. Test the pipeline on couple of video files provided as project input.
            1. Watch output of video1 on youtube
               [![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.png)](https://youtu.be/z1puf_4EOHA)
-           1. Download output of video2
-              [![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.png)(https://youtu.be/UG2gvsgE7Kg)]
-        1. Finally test the pipeline on challenge video, here you can download it.
-           1. [![Challenge Video(https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_challenge.png)](https://youtu.be/aLHsfvypoJ0)]
+           1. Watch output of video2 on youtube
+              [![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.png)](https://youtu.be/UG2gvsgE7Kg)
+        1. Finally test the pipeline on challenge video, here you can see on youtube.
+           1. [![Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_challenge.png)](https://youtu.be/aLHsfvypoJ0)
 
 
 1. Identify any shortcomings
