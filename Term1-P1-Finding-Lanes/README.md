@@ -78,11 +78,7 @@ There are three parts to the reflection:
         1. Test the pipeline on couple of video files provided as project input.
            1. Output of video1 
            
-
-<figure class="video_container">
-  <iframe src="https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
+[![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.png)](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidWhiteRight.mp4)
 
            1. Output of video2
              ![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)
