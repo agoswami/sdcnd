@@ -80,7 +80,7 @@ There are three parts to the reflection:
            
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+  <video controls="true" allowfullscreen="true" poster="https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.png">
     <source src="https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.mp4" type="video/mp4">
   </video>
 </figure>
