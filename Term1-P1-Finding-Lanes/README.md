@@ -3,27 +3,97 @@
 
 <img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
-Overview
+## Overview
 ---
 
 When we drive, we use our eyes to decide where to go.  The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle.  Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.
 
 In this project you will detect lane lines in images using Python and OpenCV.  OpenCV means "Open-Source Computer Vision", which is a package that has many useful tools for analyzing images.  
 
-To complete the project, two files will be submitted: a file containing project code and a file containing a brief write up explaining your solution. We have included template files to be used both for the [code](https://github.com/udacity/CarND-LaneLines-P1/blob/master/P1.ipynb) and the [writeup](https://github.com/udacity/CarND-LaneLines-P1/blob/master/writeup_template.md).The code file is called P1.ipynb and the writeup template is writeup_template.md 
+To complete the project, I have sumitted three files.
 
-To meet specifications in the project, take a look at the requirements in the [project rubric](https://review.udacity.com/#!/rubrics/322/view)
+**1.** File containing project code in form of jupyter notebook file [P1.ipynb](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/P1.ipynb)
+
+**2.** File containing project code in form of pure python code [Term1-P1-Finding-Lanes.py](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/Term1-P1-Finding-Lanes.py)
+
+**3.** File containing brief writeup [README.md](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/README.md)
+
+Specifications for submitting the project defined in the [project rubric](https://review.udacity.com/#!/rubrics/322/view) are met.
 
 
-Creating a Great Writeup
+Reflection
 ---
-For this project, a great writeup should provide a detailed response to the "Reflection" section of the [project rubric](https://review.udacity.com/#!/rubrics/322/view). There are three parts to the reflection:
 
-1. Describe the pipeline
+There are three parts to the reflection:
+ 1. Description of the pipeline
 
-2. Identify any shortcomings
+    1. Project is completed in jupyter notebook. Following are the Jupyter Notebook Steps
+        1. Importing required python packages.
+           ```python
+              #importing some useful packages
+              import matplotlib.pyplot as plt
+              import matplotlib.image as mpimg
+              import numpy as np
+              import cv2
+              %matplotlib inline>
+           ```
+        1. Reading a test image. 
+        ![Test Image](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/solidWhiteRight.jpg)
+        1. Enhancing the python helper function. Following are the steps involved in enhancing the method 
+           ```python 
+           def draw_lines(img, lines, color=[255, 0, 0], thickness=2):
+           ```
+           1. Input arguments of draw_lines = original image, list of hough transform lines, overlay color, thickness
+           1. Iterate of over each line in list of lines. Find center and slope of lines aligned with right and left lanes                   and add them of their own respective lists.
+           1. Calculate average of list of center and slopes for left and right lane lines.
+           1. Assuming y of right and left lines to be 0.6 of max for y-mid and 0.9 of max for y-max. 
+           1. Calculate the x (mid and max) of both right and left lines, using line extrapolation formula. When the list of                 lines are non-empty. If list of lines are empty then skip line generation.
+           
+        1. Testing on images provided as part of project, through image processing pipeline. Following are the image outputs.
+           1. Following are steps to process image, which is same for video image processing as well
+              1. read the image
+              1. perform grayscaling of image
+              1. perform gaussian blur to reduce image noise.
+              1. perform canny transform to highlight the edges (lanes).
+              1. perform croppping of images to only region of interest.
+              1. perform a hough transform to find all the lines of interest (its find all overlapping lines, conditions to choose set of overlapping is defined in params to hough_lines function).
+              1. perform a superimpose of hough transform image(lane lines) on original image
+              1. perforn RGB conversion to BGR to satify the cv2.imwrite parameter condition.
+              1. write out the superimposed image in to a file.
+              1. following is the output super-imposed images on test images provided.
+                 1. Solid White Curve
+                    ![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteCurve.jpg)
+                 1. Solid White Right
+                    ![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidWhiteRight.jpg)
+                 1. Solid Yellow Curve
+                    ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve.jpg)
+                 1. Solid Yellow Curve2
+                    ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowCurve2.jpg)
+                 1. Solid Yellow Left
+                    ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_solidYellowLeft.jpg)
+                 1. White Car Lane Switch
+                    ![Test Image6](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_images/output_whiteCarLaneSwitch.jpg)
+        1. Building a pipeline to process images which are part of frames of a video.
+           1. Steps to process video frames are same as steps to process images specified above.
+        1. Test the pipeline on couple of video files provided as project input.
+           1. Output of video1 
+           
 
-3. Suggest possible improvements
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+    <source src="https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
+           1. Output of video2
+             ![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)
+        1. Finally test the pipeline on [Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)
+
+
+1. Identify any shortcomings
+
+1. Suggest possible improvements
 
 We encourage using images in your writeup to demonstrate how your pipeline works.  
 
