@@ -76,23 +76,25 @@ There are three parts to the reflection:
         1. Building a pipeline to process images which are part of frames of a video.
            1. Steps to process video frames are same as steps to process images specified above.
         1. Test the pipeline on couple of video files provided as project input.
-           1. Download output of video1 
+           1. Watch output of video1 on youtube
               [![Solid White Right](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidWhiteRight.png)](https://youtu.be/z1puf_4EOHA)
-           1. Download output of video2
-              [![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_solidYellowLeft.mp4)]
-        1. Finally test the pipeline on challenge video, here you can download it.
-           1. [![Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/challenge.mp4)]
+           1. Watch output of video2 on youtube
+              [![Solid Yellow Left](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/solidYellowLeft.png)](https://youtu.be/UG2gvsgE7Kg)
+        1. Finally test the pipeline on challenge video, here you can see on youtube.
+           1. [![Challenge Video](https://github.com/agoswami/sdcnd/blob/master/Term1-P1-Finding-Lanes/test_videos/output_challenge.png)](https://youtu.be/aLHsfvypoJ0)
 
 
 1. Identify any shortcomings
+   1. It does not identify lanes with curved lines, we only overlay straight lines.
+   1. It only identifies lanes which are clearly marked.
+   1. It does not idenity lanes in city roads.
+   1. It does not generated overlay lines, when frame data is missing for a little time period.
 
 1. Suggest possible improvements
-
-We encourage using images in your writeup to demonstrate how your pipeline works.  
-
-All that said, please be concise!  We're not looking for you to write a book here: just a brief description.
-
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup. Here is a link to a [writeup template file](https://github.com/udacity/CarND-LaneLines-P1/blob/master/writeup_template.md). 
+   1. Possibly predict lane lines, when frame data is not available.
+   1. Possibly generate lane line, when lanes are not clearly marked.
+   1. Possibly generate lane lines as curved lines instead of staight lines.
+   
 
 
 The Project
