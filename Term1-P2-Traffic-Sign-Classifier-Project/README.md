@@ -73,42 +73,41 @@ Below is visualization on Test Data Set
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because ...
+#### 1. Technique used for preprocessing - NORMALIZATION
 
-Here is an example of a traffic sign image before and after grayscaling.
+As, the first step with the data set. I performed pre-processing using normalization technique pixel = (pixel -128)/128. Below are two images one before pre-processing and another one after normalization.
 
-![alt text][image2]
+REGULAR IMAGE 
 
-As a last step, I normalized the image data because ...
+![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_reg.png)
 
-I decided to generate additional data because ... 
+NORMALIZED
 
-To add more data to the the data set, I used the following techniques because ... 
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_nor.png)
 
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+We did not do go for greyscaling, although we could have also gone for it. Next, time with more time in hand will try that.
 
 
-#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Following is the final model architecture in the tabular format ( including model type, layers, layer sizes, connectivity, etc.) 
 
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
+| Layer 1: Convolution 3x3     	| Convolutional. Filter - 5,5,3,6 Input = 32x32x3. Output = 28x28x6. 	|
+| Activation:| RELU					|
+| Max Pooling: | Stride:2x2 Input = 28x28x6. Output = 14x14x6.|
+| Layer 2: Convolutional| Output = 10x10x16|
+| Activation:|  RELU|
+| Max Pooling: | Input = 10x10x16. Output = 5x5x16|
+| Flatten:| Input = 5x5x16. Output = 400|
+| Layer 3: Fully Connected.| Input = 400. Output = 120|
+| Activation:| RELU|
+| Layer 4: Fully Connected| Input = 120. Output = 84|
+| Activation:| RELU|
+| Applying dropouts | keep_prob = 0.68 |
+| Layer 5: Fully Connected | Input = 84. Output = 10|
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
