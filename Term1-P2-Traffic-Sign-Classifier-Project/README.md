@@ -169,14 +169,10 @@ Below is a table of all the prediction and top 5 probabilities.
 |       Traffic Sign   	|     	     Top 5  Probability			| Prediction |
 |:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
 | Speed limit (60km/h) | 1.00000000e+00, 5.71865688e-12, 1.14227231e-13, 1.50066896e-14, 4.61580864e-16 | Speed limit (60km/h) | 
-| Wild animals crossing  | 9.77782905e-01,   1.38095431e-02,   4.52117249e-03,
-          1.88645022e-03,   1.30264286e-03				| Wild animals crossing 										|
-| Speed limit (120km/h)	 |8.65320027e-01,   1.34679452e-01,   5.18626052e-07,
-          1.89818894e-09,   1.79749382e-10		| Speed limit (100km/h)											|
-| Speed limit (100km/h)  |  9.99999642e-01,   4.06174649e-07,   2.56612025e-20,
-          1.74703389e-20,   2.71637571e-21  			| Speed limit (100km/h)					 				|
-| Speed limit (30km/h)	|	1.00000000e+00,   0.00000000e+00,   0.00000000e+00,
-          0.00000000e+00,   0.00000000e+00    | Speed limit (30km/h)      							|
+| Wild animals crossing  | 9.77782905e-01, 1.38095431e-02, 4.52117249e-03, 1.88645022e-03, 1.30264286e-03	| Wild animals crossing|
+| Speed limit (120km/h)	 | 8.65320027e-01, 1.34679452e-01, 5.18626052e-07, 1.89818894e-09, 1.79749382e-10 | Speed limit (100km/h)|
+| Speed limit (100km/h)  | 9.99999642e-01, 4.06174649e-07, 2.56612025e-20, 1.74703389e-20, 2.71637571e-21 | Speed limit (100km/h)|
+| Speed limit (30km/h)	|	1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00 | Speed limit (30km/h)|
 
 
 
