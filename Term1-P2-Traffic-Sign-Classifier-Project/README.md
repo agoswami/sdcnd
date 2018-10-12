@@ -99,13 +99,13 @@ My final model consisted of the following layers:
 | Activation: RELU					|												|
 | Max Pooling: | Stride:2x2 Input = 28x28x6. Output = 14x14x6.|
 | Layer 2: Convolutional| Output = 10x10x16|
-| Activation:  RELU|           |
+| Activation:|  RELU|
 | Max Pooling: | Input = 10x10x16. Output = 5x5x16|
 | Flatten:| Input = 5x5x16. Output = 400|
 | Layer 3: Fully Connected.| Input = 400. Output = 120|
-| Activation: RELU|         |
+| Activation:| RELU|
 | Layer 4: Fully Connected| Input = 120. Output = 84|
-| Activation: RELU|           |
+| Activation:| RELU|
 | Applying dropouts | keep_prob = 0.68 |
 | Layer 5: Fully Connected | Input = 84. Output = 10|
 
