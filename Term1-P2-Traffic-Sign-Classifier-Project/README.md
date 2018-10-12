@@ -96,7 +96,7 @@ My final model consisted of the following layers:
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
 | Layer 1: Convolution 3x3     	| Convolutional. Filter - 5,5,3,6 Input = 32x32x3. Output = 28x28x6. 	|
-| Activation: RELU					|												|
+| Activation:| RELU					|
 | Max Pooling: | Stride:2x2 Input = 28x28x6. Output = 14x14x6.|
 | Layer 2: Convolutional| Output = 10x10x16|
 | Activation:|  RELU|
