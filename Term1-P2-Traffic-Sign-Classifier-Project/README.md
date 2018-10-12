@@ -1,4 +1,4 @@
-## Project: Build a Traffic Sign Recognition Program
+## Project: Traffic Sign Recognition Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 Overview
@@ -49,6 +49,35 @@ git clone https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project
 cd CarND-Traffic-Sign-Classifier-Project
 jupyter notebook Traffic_Sign_Classifier.ipynb
 ```
+#### 2. Include an exploratory visualization of the dataset.
+
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+
+![alt text][image1]
+
+### Design and Test a Model Architecture
+
+#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+
+As a first step, I decided to convert the images to grayscale because ...
+
+Here is an example of a traffic sign image before and after grayscaling.
+
+![alt text][image2]
+
+As a last step, I normalized the image data because ...
+
+I decided to generate additional data because ... 
+
+To add more data to the the data set, I used the following techniques because ... 
+
+Here is an example of an original image and an augmented image:
+
+![alt text][image3]
+
+The difference between the original data set and the augmented data set is the following ... 
+
+
 
 ### Requirements for Submission
 Follow the instructions in the `Traffic_Sign_Classifier.ipynb` notebook and write the project report using the writeup template as a guide, `writeup_template.md`. Submit the project code and writeup document.
