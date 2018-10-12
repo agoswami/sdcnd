@@ -71,8 +71,6 @@ Below is visualization on Test Data Set
 
 ### Design and Test a Model Architecture
 
-#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
-
 #### 1. Technique used for preprocessing - NORMALIZATION
 
 As, the first step with the data set. I performed pre-processing using normalization technique pixel = (pixel -128)/128. Below are two images one before pre-processing and another one after normalization.
@@ -113,7 +111,7 @@ My final model consisted of the following layers:
 
 To train the model, I have used adam optimizer. The BATCH is 65 and number of EPOCHS is 100. I have used learning rate as 0.0088. To initialize weight variable I have used mean = 0, stddev = 0.1
 
-#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+#### 4. Following section describes the model results, architecture decision, process used to train the model and get to final model and hyper-parameters.
 
 My final model results were:
 * training set accuracy of 94.9
@@ -121,15 +119,21 @@ My final model results were:
 * test set accuracy of 92.9
 
 
-If a well known architecture was chosen:
-* Network Architecture Chosen:
-  LeNet achitecture was chosen. 
+Architecture:
+
+* LeNet achitecture was chosen. 
   
-* Why did you believe it would be relevant to the traffic sign application?
-Because the classification problem in LeNet is similar to Traffic Sign Classification. A small change in the LeNet  architecture can make it adapt to Traffic Sign classification.
+* Classification problem in LeNet is similar to Traffic Sign Classification. A small change in the LeNet  architecture can make it adapt to Traffic Sign classification.
   
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-Training accuracy on training set, validation set and test set are very close. This indicates that model has tun well.
+* Training accuracy on training set, validation set and test set are very close. This indicates that model has tun well.
+
+Fine tuning the model:
+
+* Learning rate was achieved by using delta increase or decrease technique and was set to 0.0088, also while learning rate was changed everything else was kept constant.
+* BATCH size was also chosen by binary method, and keeping other variables constant. It was found optimal at 65.
+* EPOCHS was also chosen by binary method, while keeping other variables contant. It was finally set to 100.
+* The training exit when training accuracy goes above 94% and model is saved at this moment.
+* DROPOUTS helped achive better accuracy, it was also selected using binary method, while keeping other variables constant. Finally setting keep_prob to 0.68
 
 
 ### Test a Model on New Images
@@ -173,6 +177,3 @@ Below is a table of all the prediction and top 5 probabilities.
 | Speed limit (120km/h)	 | 8.65320027e-01, 1.34679452e-01, 5.18626052e-07, 1.89818894e-09, 1.79749382e-10 | Speed limit (100km/h)|
 | Speed limit (100km/h)  | 9.99999642e-01, 4.06174649e-07, 2.56612025e-20, 1.74703389e-20, 2.71637571e-21 | Speed limit (100km/h)|
 | Speed limit (30km/h)	|	1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00 | Speed limit (30km/h)|
-
-
-
