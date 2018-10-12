@@ -57,8 +57,17 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed among classes
 
-![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/train_data_set.png)
+Below is visualization on Training Data Set
 
+![Test Image1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/train_data_set.jpg)
+
+Below is visualization on Validation Data Set
+
+![Test Image2](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/valid_data_set.png)
+
+Below is visualization on Test Data Set
+
+![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/test_data_set.png)
 
 ### Design and Test a Model Architecture
 
