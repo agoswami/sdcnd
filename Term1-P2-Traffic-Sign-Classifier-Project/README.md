@@ -167,7 +167,7 @@ For the first image, the model is relatively sure that this is a Speed limit (60
 Below is a table of all the prediction and top 5 probabilities.
 
 |       Traffic Sign   	|     	     Top 5  Probability			| Prediction |
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
 | Speed limit (60km/h) | 1.00000000e+00, 5.71865688e-12, 1.14227231e-13, 1.50066896e-14, 4.61580864e-16 | Speed limit (60km/h) | 
 | Wild animals crossing  | 9.77782905e-01,   1.38095431e-02,   4.52117249e-03,
           1.88645022e-03,   1.30264286e-03				| Wild animals crossing 										|
