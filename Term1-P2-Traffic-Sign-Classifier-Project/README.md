@@ -82,45 +82,32 @@ REGULAR IMAGE
 ![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_reg.png)
 
 NORMALIZED
+
 ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_nor.png)
 
-
-As a first step, I decided to convert the images to grayscale because ...
-
-Here is an example of a traffic sign image before and after grayscaling.
-
-![alt text][image2]
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+We did not do go for greyscaling, although we could have also gone for it. Next, time with more time in hand will try that.
 
 
-#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Following is the final model architecture in the tabular format ( including model type, layers, layer sizes, connectivity, etc.) 
 
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
+| Layer 1: Convolution 3x3     	| Convolutional. Filter - 5,5,3,6 Input = 32x32x3. Output = 28x28x6. 	|
+| Activation: RELU					|												|
+| Max Pooling: | Stride:2x2 Input = 28x28x6. Output = 14x14x6.|
+| Layer 2: Convolutional| Output = 10x10x16|
+| Activation:  RELU|           |
+| Max Pooling: | Input = 10x10x16. Output = 5x5x16|
+| Flatten:| Input = 5x5x16. Output = 400|
+| Layer 3: Fully Connected.| Input = 400. Output = 120|
+| Activation: RELU|         |
+| Layer 4: Fully Connected| Input = 120. Output = 84|
+| Activation: RELU|           |
+| Applying dropouts | keep_prob = 0.68 |
+| Layer 5: Fully Connected | Input = 84. Output = 10|
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
