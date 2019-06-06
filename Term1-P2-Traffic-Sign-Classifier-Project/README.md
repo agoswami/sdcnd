@@ -56,7 +56,7 @@ Below is visualization on Test Data Set
 
 ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/test-data-set.png)
 
-### Design and Test a Model Architecture
+### Design, Train and Test a Model Architecture
 
 #### 1. Technique used for preprocessing - NORMALIZATION
 
