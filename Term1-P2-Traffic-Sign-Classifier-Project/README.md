@@ -56,25 +56,23 @@ Below is visualization on Test Data Set
 
 ![Test Image3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/test-data-set.png)
 
-Sample Images
+Sample Images with Class as label
 
 ![Sample Image](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/sample-images.png)
 ### Design, Train and Test a Model Architecture
 
 #### 1. Technique used for preprocessing - NORMALIZATION
 
-As, the first step with the data set. I performed pre-processing using normalization technique pixel = (pixel -128)/128. Below are two images one before pre-processing and another one after normalization.
+As, the first step with the data set. I performed three step pre-processing of images.
 
-REGULAR IMAGE 
+1. Convert the RGB image into Greyscaling.
+2. Take the Greyscale Image and perform Histogram Equilization.
+3. Then, perform normalization on pixel value so that there zero mean and equal variance. 
+   By, performing: pixel = (pixel - 128)/ 128
+   
+Below is example of one such image. 
 
-![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_reg.png)
-
-NORMALIZED
-
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/speed-30_nor.png)
-
-We did not do go for greyscaling, although we could have also gone for it. Next, time with more time in hand will try that.
-
+![Test Image4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/normalized_images/normalized-image.png)
 
 #### 2. Following is the final model architecture in the tabular format ( including model type, layers, layer sizes, connectivity, etc.) 
 
