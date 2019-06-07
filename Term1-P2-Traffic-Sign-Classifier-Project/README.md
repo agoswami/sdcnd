@@ -121,7 +121,8 @@ Fine tuning the model:
 * BATCH size was also chosen by binary method, and keeping other variables constant. It was found optimal at 16. Since, smaller BATCH size generalizes the model more than larger BATCH size.
 * EPOCHS was also chosen by binary method, while keeping other variables contant. It was finally set to 100.
 * The training exit when training accuracy goes above 93% and model is saved at this moment.
-* DROPOUTS could have been used achive better accuracy. Finally setting keep_prob to 1.0, Or not dropping out anything.
+* DROPOUTS could have been used for regularization, but decided not to use it. Finally setting keep_prob to 1.0 before the last layer, Or not dropping out anything.
+* EARLY TERMINATION, epochs are set to 100, but model training is terminated when the accuracy goes greater than 93%.
 
 
 ### Test a Model on New Images
