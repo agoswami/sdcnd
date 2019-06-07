@@ -148,7 +148,7 @@ All first four images are difficult to classify because it is dark. Specially Sp
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| Image Description |
-|:---------------------:|:---------------------------------------------:| --------------------------:|
+|:---------------------:|:---------------------------------------------:|:--------------------------:|
 | Speed limit (60km/h)  		| Speed limit (60km/h)								| staight angle, very dark, low contrast, very jittery and no obvious background object | 
 | Wild animals crossing   			| Wild animals crossing										| |
 | Speed limit (120km/h)				| Speed limit (100km/h)								| |
