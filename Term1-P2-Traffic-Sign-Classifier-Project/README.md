@@ -128,6 +128,8 @@ Fine tuning the model:
 * The training exit when training accuracy goes above 93% and model is saved at this moment.
 * DROPOUTS could have been used for regularization, but decided not to use it. Finally setting keep_prob to 1.0 before the last layer, Or not dropping out anything.
 * EARLY TERMINATION, epochs are set to 100, but model training is terminated when the accuracy goes greater than 93%.
+* AVOIDING UNDERFITTING: By using deep learning lenet architecture and using a large data set for training, underfitting is avoided.
+* AVOIDING OVERFITTING: By using regularization technique like dropouts and early termination, overfitting can be avoided.
 
 
 ### Test a Model on New Images
