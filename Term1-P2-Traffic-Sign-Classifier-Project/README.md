@@ -93,11 +93,11 @@ My final model consisted of the following layers:
 | Layer 4: Fully Connected| Input = 120. Output = 84|
 | Activation:| RELU|
 | Applying dropouts | keep_prob = 1.0 |
-| Layer 5: Fully Connected | Input = 84. Output = 10|
+| Layer 5: Fully Connected | Input = 84. Output = 43|
 
 #### 3. Following is the training approach used including ( the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate)
 
-To train the model, I have used adam optimizer. The BATCH is 65 and number of EPOCHS is 100. I have used learning rate as 0.0088. To initialize weight variable I have used mean = 0, stddev = 0.1
+To train the model, I have used adam optimizer. There are  The BATCH is 65 and number of EPOCHS is 100. I have used learning rate as 0.0088. To initialize weight variable I have used mean = 0, stddev = 0.1
 
 #### 4. Following section describes the model results, architecture decision, process used to train the model and get to final model and hyper-parameters.
 
