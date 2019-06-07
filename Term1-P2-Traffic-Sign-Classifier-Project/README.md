@@ -149,11 +149,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| Image Description |
 |:---------------------:|:---------------------------------------------:|:--------------------------:|
-| Speed limit (60km/h)  		| Speed limit (60km/h)								| staight angle, very dark, low contrast, very jittery and no obvious background object | 
-| Wild animals crossing   			| Wild animals crossing										| |
-| Speed limit (120km/h)				| Speed limit (100km/h)								| |
-| Speed limit (100km/h)     		| Speed limit (100km/h)				 				| |
-| Speed limit (30km/h)		| Speed limit (30km/h)      							| |
+| Speed limit (60km/h)  		| Speed limit (60km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object | 
+| Wild animals crossing   			| Wild animals crossing										| slight angle, very dark, low contrast, very jittery and vehicle in background |
+| Speed limit (120km/h)				| Speed limit (100km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object |
+| Speed limit (100km/h)     		| Speed limit (100km/h)				 				| straight angle, slightly light, low contrast, very jittery and no obvious background object|
+| Speed limit (30km/h)		| Speed limit (30km/h)      							| straight angle, bright image, low contrast, very jittery and no obvious background object|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 92.9%
@@ -168,8 +168,8 @@ Below is a table of all the prediction and top 5 probabilities.
 
 |       Traffic Sign   	|     	     Top 5  Probability			| Prediction |
 |:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
-| Speed limit (60km/h) | 1.00000000e+00, 5.71865688e-12, 1.14227231e-13, 1.50066896e-14, 4.61580864e-16 | Speed limit (60km/h) | 
-| Wild animals crossing  | 9.77782905e-01, 1.38095431e-02, 4.52117249e-03, 1.88645022e-03, 1.30264286e-03	| Wild animals crossing|
-| Speed limit (120km/h)	 | 8.65320027e-01, 1.34679452e-01, 5.18626052e-07, 1.89818894e-09, 1.79749382e-10 | Speed limit (100km/h)|
-| Speed limit (100km/h)  | 9.99999642e-01, 4.06174649e-07, 2.56612025e-20, 1.74703389e-20, 2.71637571e-21 | Speed limit (100km/h)|
-| Speed limit (30km/h)	|	1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00 | Speed limit (30km/h)|
+| Speed limit (60km/h) | 1.00000000e+00,   2.51305936e-23,   2.06709215e-30, 6.95019546e-31,   1.41034005e-36 | Speed limit (60km/h) | 
+| Wild animals crossing  | 1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00	| Wild animals crossing|
+| Speed limit (120km/h)	 | 1.00000000e+00,   3.96799863e-22,   1.14895632e-32, 4.48642603e-38,   0.00000000e+00 | Speed limit (100km/h)|
+| Speed limit (100km/h)  | 9.99969125e-01,   3.08349954e-05,   6.27973784e-10, 2.62038261e-17,   1.66744739e-17 | Speed limit (100km/h)|
+| Speed limit (30km/h)	|	1.00000000e+00,   1.17795121e-22,   5.86016667e-28, 1.99588618e-33,   0.00000000e+00 | Speed limit (30km/h)|
