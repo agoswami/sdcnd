@@ -107,6 +107,11 @@ My final model results were:
 * test set accuracy of 90.9
 
 
+### Learning rate with EPOCHS
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/learning-rate-with-epoch.png)
+
+
+
 Architecture:
 
 * LeNet achitecture was chosen. 
