@@ -107,7 +107,7 @@ My final model results were:
 * test set accuracy of 90.9
 
 
-### Learning rate with EPOCHS
+### Accuracy with EPOCHS
 ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/learning-rate-with-epoch.png)
 
 
@@ -147,13 +147,13 @@ All first four images are difficult to classify because it is dark. Specially Sp
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Speed limit (60km/h)  		| Speed limit (60km/h)								| 
-| Wild animals crossing   			| Wild animals crossing										|
-| Speed limit (120km/h)				| Speed limit (100km/h)								|
-| Speed limit (100km/h)     		| Speed limit (100km/h)				 				|
-| Speed limit (30km/h)		| Speed limit (30km/h)      							|
+| Image			        |     Prediction	        					| Image Description |
+|:---------------------:|:---------------------------------------------:| --------------------------:|
+| Speed limit (60km/h)  		| Speed limit (60km/h)								| staight angle, very dark, low contrast, very jittery and no obvious background object | 
+| Wild animals crossing   			| Wild animals crossing										| |
+| Speed limit (120km/h)				| Speed limit (100km/h)								| |
+| Speed limit (100km/h)     		| Speed limit (100km/h)				 				| |
+| Speed limit (30km/h)		| Speed limit (30km/h)      							| |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 92.9%
