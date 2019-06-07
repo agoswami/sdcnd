@@ -149,11 +149,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| Image Description |
 |:---------------------:|:---------------------------------------------:|:--------------------------:|
-| Speed limit (60km/h)  		| Speed limit (60km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object | 
-| Wild animals crossing   			| Wild animals crossing										| slight angle, very dark, low contrast, very jittery and vehicle in background |
-| Speed limit (120km/h)				| Speed limit (100km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object |
-| Speed limit (100km/h)     		| Speed limit (100km/h)				 				| straight angle, slightly light, low contrast, very jittery and no obvious background object|
-| Speed limit (30km/h)		| Speed limit (30km/h)      							| straight angle, bright image, low contrast, very jittery and no obvious background object|
+| ![Test Image German 1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_60.png) 		| Speed limit (60km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object | 
+| ![Test Image German 2](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/wild_animal.png)   			| Wild animals crossing										| slight angle, very dark, low contrast, very jittery and vehicle in background |
+| ![Test Image German 3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_120.png)			| Speed limit (100km/h)								| straight angle, very dark, low contrast, very jittery and no obvious background object |
+| ![Test Image German 4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_100.png)    		| Speed limit (100km/h)				 				| straight angle, slightly light, low contrast, very jittery and no obvious background object|
+| ![Test Image German 5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_30.png)		| Speed limit (30km/h)      							| straight angle, bright image, low contrast, very jittery and no obvious background object|
 
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 90.9%
