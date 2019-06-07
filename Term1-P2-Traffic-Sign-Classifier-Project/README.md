@@ -92,7 +92,7 @@ My final model consisted of the following layers:
 | Activation:| RELU|
 | Layer 4: Fully Connected| Input = 120. Output = 84|
 | Activation:| RELU|
-| Applying dropouts | keep_prob = 0.68 |
+| Applying dropouts | keep_prob = 1.0 |
 | Layer 5: Fully Connected | Input = 84. Output = 10|
 
 #### 3. Following is the training approach used including ( the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate)
