@@ -97,14 +97,14 @@ My final model consisted of the following layers:
 
 #### 3. Following is the training approach used including ( the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate)
 
-To train the model, I have used adam optimizer. There are  The BATCH is 65 and number of EPOCHS is 100. I have used learning rate as 0.0088. To initialize weight variable I have used mean = 0, stddev = 0.1
+To train the model, I have used adam optimizer. There are other options available for Optimizers ex. Adagrad, Adadelta etc. However, it is found that Adam optimizer converges the fastest. So, it is being used here. There are  The BATCH is 16, it is taken a power of 2, Since the CPU and GPU memory architecture usually organizes the memory in power of 2, which can speed up the fetch of data to memory. And, the number of EPOCHS is 100. I have used learning rate as rate = 0.00060. To initialize weight variable I have used mean = 0, stddev = 0.1
 
 #### 4. Following section describes the model results, architecture decision, process used to train the model and get to final model and hyper-parameters.
 
 My final model results were:
-* training set accuracy of 94.9
-* validation set accuracy of 94.6
-* test set accuracy of 92.9
+* training set accuracy of 93.3
+* validation set accuracy of 93.3
+* test set accuracy of 90.9
 
 
 Architecture:
@@ -117,11 +117,11 @@ Architecture:
 
 Fine tuning the model:
 
-* Learning rate was achieved by using delta increase or decrease technique and was set to 0.0088, also while learning rate was changed everything else was kept constant.
-* BATCH size was also chosen by binary method, and keeping other variables constant. It was found optimal at 65.
+* Learning rate was achieved by using delta increase or decrease technique and was set to 0.00060, also while learning rate was changed everything else was kept constant.
+* BATCH size was also chosen by binary method, and keeping other variables constant. It was found optimal at 16. Since, smaller BATCH size generalizes the model more than larger BATCH size.
 * EPOCHS was also chosen by binary method, while keeping other variables contant. It was finally set to 100.
-* The training exit when training accuracy goes above 94% and model is saved at this moment.
-* DROPOUTS helped achive better accuracy, it was also selected using binary method, while keeping other variables constant. Finally setting keep_prob to 0.68
+* The training exit when training accuracy goes above 93% and model is saved at this moment.
+* DROPOUTS could have been used achive better accuracy. Finally setting keep_prob to 1.0, Or not dropping out anything.
 
 
 ### Test a Model on New Images
