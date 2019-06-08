@@ -108,17 +108,17 @@ My final model results were:
 
 
 ### Accuracy with EPOCHS
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/accuracy-with-epoch.png)
+![Test Epoch1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/accuracy-with-epoch.png)
 
 
 ### Learning curve for training
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/training-learning-curve.png)
+![Test Curve1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/training-learning-curve.png)
 
 ### Learning curve for validation
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/validation-learning-curve.png)
+![Test Curve2](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/validation-learning-curve.png)
 
 ### Learning curve for test
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/test-learning-curve.png)
+![Test Curve3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data_set_images/test-learning-curve.png)
 
 Architecture:
 
