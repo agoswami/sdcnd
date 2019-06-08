@@ -108,7 +108,7 @@ My final model results were:
 
 
 ### Accuracy with EPOCHS
-![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/learning-rate-with-epoch.png)
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/accuracy-with-epoch.png)
 
 
 
