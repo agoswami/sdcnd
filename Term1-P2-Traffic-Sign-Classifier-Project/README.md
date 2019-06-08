@@ -164,7 +164,7 @@ Here are the results of the prediction:
 | ![Test Image German 5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_30.png)		| Speed limit (30km/h)      							| straight angle, bright image, low contrast, very jittery and no obvious background object|
 
 
-The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 90.9%
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 90.5%
 
 #### 3. Following section will explain softmax probabilities on each image prediction. And, how the prediction chose a particular class.
 
@@ -176,8 +176,8 @@ Below is a table of all the prediction and top 5 probabilities.
 
 |  Image  |     Traffic Sign   	|     	     Top 5  Probability			| Prediction |
 |:-------:|:---------------------:|:---------------------------------------------:| :---------------------------------------------:|
-|![Test Image German 1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_60.png) | Speed limit (60km/h) | 1.00000000e+00,   2.51305936e-23,   2.06709215e-30, 6.95019546e-31,   1.41034005e-36 | Speed limit (60km/h) | 
-| ![Test Image German 2](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/wild_animal.png) | Wild animals crossing  | 1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00	| Wild animals crossing|
-| ![Test Image German 3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_120.png) | Speed limit (120km/h)	 | 1.00000000e+00,   3.96799863e-22,   1.14895632e-32, 4.48642603e-38,   0.00000000e+00 | Speed limit (120km/h)|
-| ![Test Image German 4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_100.png) | Speed limit (100km/h)  | 9.99969125e-01,   3.08349954e-05,   6.27973784e-10, 2.62038261e-17,   1.66744739e-17 | Speed limit (100km/h)|
-| ![Test Image German 5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_30.png) | Speed limit (30km/h)	|	1.00000000e+00,   1.17795121e-22,   5.86016667e-28, 1.99588618e-33,   0.00000000e+00 | Speed limit (30km/h)|
+|![Test Image German 1](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_60.png) | Speed limit (60km/h) |  1.00000000e+00,   2.32628268e-17,   2.36262311e-21,  1.26511731e-22,   1.74394900e-23 | Speed limit (60km/h) | 
+| ![Test Image German 2](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/wild_animal.png) | Wild animals crossing  | 1.00000000e+00,   1.98907540e-11,   6.79139582e-16, 2.57423477e-16,   3.04496698e-17	| Wild animals crossing|
+| ![Test Image German 3](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_120.png) | Speed limit (120km/h)	 | 1.00000000e+00,   7.42253684e-14,   4.36191447e-24, 6.63499814e-27,   1.04985321e-27 | Speed limit (120km/h)|
+| ![Test Image German 4](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_100.png) | Speed limit (100km/h)  | 9.99829054e-01,   1.70878790e-04,   5.09370039e-08, 1.28797755e-08,   6.90450852e-09 | Speed limit (100km/h)|
+| ![Test Image German 5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/five_german_signs/speed_30.png) | Speed limit (30km/h)	|	1.00000000e+00,   1.52510602e-26,   4.73973719e-28, 1.60767514e-29,   6.90052212e-33 | Speed limit (30km/h)|
