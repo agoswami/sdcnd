@@ -102,15 +102,23 @@ To train the model, I have used adam optimizer. There are other options availabl
 #### 4. Following section describes the model results, architecture decision, process used to train the model and get to final model and hyper-parameters.
 
 My final model results were:
-* training set accuracy of 93.3
-* validation set accuracy of 93.3
-* test set accuracy of 90.9
+* training set accuracy of 93.6
+* validation set accuracy of 93.6
+* test set accuracy of 90.5
 
 
 ### Accuracy with EPOCHS
 ![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/accuracy-with-epoch.png)
 
 
+### Learning curve for training
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/training-learning-curve.png)
+
+### Learning curve for validation
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/validation-learning-curve.png)
+
+### Learning curve for test
+![Test Image5](https://github.com/agoswami/sdcnd/blob/master/Term1-P2-Traffic-Sign-Classifier-Project/data-set-images/test-learning-curve.png)
 
 Architecture:
 
