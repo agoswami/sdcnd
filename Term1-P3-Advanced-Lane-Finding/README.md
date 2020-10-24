@@ -38,7 +38,7 @@ You're reading it!
 ### Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
 
 #### 1. Finding the chessboard corners from camera calibration images. 
-The code for this step is contained in the first code cell (titled "Find the chessboard corners from the camera calibration images") of the IPython notebook located in "https://github.com/agoswami/sdcnd/blob/master/Term1-P3-Advanced-Lane-Finding/Advanced_Lane_Lines.ipynb".  
+The code for this step is contained in the 1st code cell (titled "Find the chessboard corners from the camera calibration images") of the IPython notebook located in "https://github.com/agoswami/sdcnd/blob/master/Term1-P3-Advanced-Lane-Finding/Advanced_Lane_Lines.ipynb".  
 
 I start by finding the chessboard corners from camera calibration images. I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  Below is the output of the detected chessboard corners.
 
@@ -47,7 +47,7 @@ I start by finding the chessboard corners from camera calibration images. I star
 #### 2. Calculate the camera calibration matrix and distortion coefficients.Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
 
-Now, we calculate the camera calibration matrix and distortion coefficients. We switch to the third code cell, titled "Write a function to return undistored image for a input images". I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
+Now, we calculate the camera calibration matrix and distortion coefficients. We switch to the 3rd code cell, titled "Write a function to return undistored image for a input images". I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
 
 ### Pipeline (single images)
