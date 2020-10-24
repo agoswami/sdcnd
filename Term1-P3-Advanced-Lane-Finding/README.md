@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [cheessboard1]: ./images/chessboard-corners.png "Chessboards"
-[chessboard2]: ./images/chessboard-undistorted.jpg "Chessboard Undistorted"
+[chessboard2]: ./images/chessboard-undistorted.png "Chessboard Undistorted"
 [image3]: ./examples/binary_combo_example.jpg "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
