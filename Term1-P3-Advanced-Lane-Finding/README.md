@@ -66,7 +66,13 @@ Now, lets try to use 'cal_undistort' on one test images and see the the undistor
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text][image2]
+
+1. Convert the BGR/RGB image GRAY using 'cv2.cvtColor'
+2. Use 'cv2.calibrateCamera' function, use objpoints and imgpoints calculated from chessboard images, to get calibration matrices and distortion coefficient.
+3. Use 'cv2.undistort' with camera calibration matrix and distortion coefficient to output image.
+4. Display that image.
+
+![test_image1][test_image1]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
