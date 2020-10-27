@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [chessboard1]: ./images/chessboard-corners.png "Chessboards"
 [chessboard2]: ./images/chessboard-undistorted.png "Chessboard Undistorted"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
+[test_image1]: ./images/test_image-undistorted.jpg "Image Undistorted"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
@@ -47,11 +47,19 @@ I start by finding the chessboard corners from camera calibration images. I star
 
 ![chessboard-corners][chessboard1]
 
-#### 2. Calculate the camera calibration matrix and distortion coefficients.Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
+#### 2. Calculate the camera calibration matrix and distortion coefficients.Briefly state how you computed the camera matrix and distortion coefficients. 
 
-Now, we calculate the camera calibration matrix and distortion coefficients. We switch to the 3rd code cell, titled "Write a function to return undistored image for a input images". I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
+Now, we calculate the camera calibration matrix and distortion coefficients. We switch to the 3rd code cell, titled "Write a function to return undistored image for a input images". I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to one of the chessboard images using the `cv2.undistort()` function and obtained this result: 
 
-![chessboard-corners][chessboard2]
+![chessboard-undistorted][chessboard2]
+
+#### 3. Provide an example of a distortion corrected calibration image.
+
+Now, lets try to use 'cal_undistort' on one test images and see the the undistorted version.
+
+![test_image1][test_image1]
+
+
 
 ### Pipeline (single images)
 
