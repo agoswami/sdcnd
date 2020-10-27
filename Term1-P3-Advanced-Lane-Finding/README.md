@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [chessboard1]: ./images/chessboard-corners.png "Chessboards"
 [chessboard2]: ./images/chessboard-undistorted.png "Chessboard Undistorted"
-[test_image1]: ./images/test_image-undistorted.jpg "Image Undistorted"
+[test_image1]: ./images/test_image-undistorted.png "Image Undistorted"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
