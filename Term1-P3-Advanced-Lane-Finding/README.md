@@ -18,8 +18,8 @@ The goals / steps of this project are the following:
 
 [chessboard1]: ./images/chessboard-corners.png "Chessboards"
 [chessboard2]: ./images/chessboard-undistorted.png "Chessboard Undistorted"
-[test_image1]: ./images/test_image-undistorted.png "Image Undistorted"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
+[test_image1]: ./images/test_image-undistorted1.png "Image Undistorted1"
+[test_image2]: ./images/test_image-undistorted.png "Image Undisotorted2"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
@@ -72,7 +72,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 3. Use 'cv2.undistort' with camera calibration matrix and distortion coefficient to output image.
 4. Display that image.
 
-![test_image1][test_image1]
+![test_image2][test_image2]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
