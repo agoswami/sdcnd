@@ -22,7 +22,8 @@ The goals / steps of this project are the following:
 [test_image2]: ./images/test_image-undistorted.png "Image Undisotorted2"
 [test_image3]: ./images/test_image-transformed.png "Transformed Image"
 [test_image4]: ./images/test_image-unwarped.png "Unwarped Images"
-[video1]: ./project_video.mp4 "Video"
+[histogram1]: ./images/test_image-histogram1.png "Full Image Histogram"
+[histogram2]: ./images/test_image-histogram2.png "Lower Half Image Histogram"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -114,7 +115,11 @@ I verified that my perspective transform was working as expected by drawing the 
 
 Here are the steps that I performed to identify the lane-lines pixels:
 
-##### a.
+##### a. Identify where the binary activations occur in the binary image, it is shown in code section titled "Plot a histogram where binary activations occur in image". Image of how this activation is shown in histogram below:
+
+![alt text][image5]
+
+##### b. Identify where the binary activations occur in lower half of binary image, it is shown in code section titled "Take a histogram along all the columns in the lower half of the image". Image of how this activation is shown in histogram below:
 
 ![alt text][image5]
 
