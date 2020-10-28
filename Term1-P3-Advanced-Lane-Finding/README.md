@@ -117,11 +117,11 @@ Here are the steps that I performed to identify the lane-lines pixels:
 
 ##### a. Identify where the binary activations occur in the binary image, it is shown in code section titled "Plot a histogram where binary activations occur in image". Image of how this activation is shown in histogram below:
 
-![alt text][image5]
+![histogram1][histogram1]
 
 ##### b. Identify where the binary activations occur in lower half of binary image, it is shown in code section titled "Take a histogram along all the columns in the lower half of the image". Image of how this activation is shown in histogram below:
 
-![alt text][image5]
+![histogram2][histogram2]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
