@@ -76,7 +76,15 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+I used a combination of color and gradient thresholds to generate a binary image (thresholding steps in code section titled 'Compute thresholded binary image, using color and gradients transforms' in the reference jupyter notebook mentioned above).  
+
+Here's an example of my output for this step. 
+
+1. Convert image to HLS color space, use S channel.
+2. Then, perform Sobel x derivative on gray scale image from previous step.
+3. Apply threshold on x gradient.
+4. Apply threshold on S color channel.
+5. Combine all above layers in binary output, example is shown below.
 
 ![test image3][test_images3]
 
