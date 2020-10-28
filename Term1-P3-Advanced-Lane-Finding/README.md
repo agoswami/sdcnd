@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [chessboard2]: ./images/chessboard-undistorted.png "Chessboard Undistorted"
 [test_image1]: ./images/test_image-undistorted1.png "Image Undistorted1"
 [test_image2]: ./images/test_image-undistorted.png "Image Undisotorted2"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
+[test_images3]: ./images/test_image-transformed.png "Transformed Image"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
@@ -78,7 +78,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
-![alt text][image3]
+![test image3][test_images3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
