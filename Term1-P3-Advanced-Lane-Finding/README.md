@@ -138,6 +138,8 @@ Histogram of binary image of lower-half of image, is much clearer than the binar
 
 ![polyfit-lines][polyfit-lines]
 
+The following picture is visualization of above in isolation from our example image:
+
 ![polyfit-isolation][polyfit-isolation]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
