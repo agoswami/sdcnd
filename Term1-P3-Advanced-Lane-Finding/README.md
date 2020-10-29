@@ -25,6 +25,8 @@ The goals / steps of this project are the following:
 [histogram1]: ./images/test_image-histogram1.png "Full Image Histogram"
 [histogram2]: ./images/test_image-histogram2.png "Lower Half Image Histogram"
 [sliding-window]: ./images/test_image-sliding-window.png "Sliding Window of Lane Lines"
+[polyfit-lines]: ./images/test_image-polyfit-lines.png "Polyfit of Lane Lines"
+[polyfit-isolation]: ./images/test_image-polyfit-isolation.png "Polyfit of Lane Lines in Isolation"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
