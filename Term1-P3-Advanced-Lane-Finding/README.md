@@ -24,6 +24,7 @@ The goals / steps of this project are the following:
 [test_image4]: ./images/test_image-unwarped.png "Unwarped Images"
 [histogram1]: ./images/test_image-histogram1.png "Full Image Histogram"
 [histogram2]: ./images/test_image-histogram2.png "Lower Half Image Histogram"
+[sliding-window]: ./images/test_image-sliding-window.png "Sliding Window of Lane Lines"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -122,6 +123,14 @@ Here are the steps that I performed to identify the lane-lines pixels:
 ##### b. Identify where the binary activations occur in lower half of binary image, it is shown in code section titled "Take a histogram along all the columns in the lower half of the image". Image of how this activation is shown in histogram below:
 
 ![histogram2][histogram2]
+
+Histogram of binary image of lower-half of image, is much clearer than the binary image of full binary image.
+
+##### c. Find the peaks of left and right halves of the histogram and these will become the starting point for the left and right lines
+
+##### d. Fit the polynomial through two lane lines, use sliding window to find all the pixels for left and right lane lines, then use these lane pixels to find polynomial to fit each for left and right lane lines. After, we identify these lane lines, we will use it on our next steps. Image of how this will look is shown in picture below for our sample image:
+
+![sliding-window][sliding-window]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
