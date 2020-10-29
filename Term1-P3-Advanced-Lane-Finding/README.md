@@ -128,9 +128,15 @@ Histogram of binary image of lower-half of image, is much clearer than the binar
 
 ##### c. Find the peaks of left and right halves of the histogram and these will become the starting point for the left and right lines
 
-##### d. Fit the polynomial through two lane lines, use sliding window to find all the pixels for left and right lane lines, then use these lane pixels to find polynomial to fit each for left and right lane lines. After, we identify these lane lines, we will use it on our next steps. Image of how this will look is shown in picture below for our sample image:
+##### d. Fit the polynomial through two lane lines, using sliding window to find all the pixels for left and right lane lines, then use these lane pixels to find polynomial to fit each of left and right lane lines (using numpy function `polyfit`). After, we identify these lane lines, we will use it on our next steps. Code is located in the jupyter notebook at code section with title "Fit the polynomial through the two lane lines". Image of how this will look is shown in picture below for our sample image:
 
 ![sliding-window][sliding-window]
+
+##### e. Show the margin containing pixels around the detected lane lines. The following picture will show the pixels which were used in generating `polyfit` lane lines. It also shows the margin around lane lines used for line generation.
+
+![polyfit-lines][polyfit-lines]
+
+![polyfit-isolation][polyfit-isolation]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
