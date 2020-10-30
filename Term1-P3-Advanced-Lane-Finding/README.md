@@ -150,6 +150,9 @@ I performed this calculation in code section titled "Measure Curvature of each l
 
 f(y) = Ay<sup>2</sup>+By+C
 
+R <sub>curve</sub> = (1+(2Ay+B) 2) <sup>3/2</sup> / |2A|
+ 
+
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
