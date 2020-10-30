@@ -187,9 +187,9 @@ I have implemented the function `draw_lane` in the jupyter notebook in code sect
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-The image processing pipeline that was established to find the lane lines in images successfully processes the video. The output here should be a new video where the lanes are identified in every frame, and outputs are generated regarding the radius of curvature of the lane and vehicle position within the lane. The pipeline should correctly map out curved lines and not fail when shadows or pavement color changes are present. The output video should be linked to in the writeup and/or saved and submitted with the project.
+Here's final project video [project-video]
 
-Here's a [project-video]
+The final project video shows the identified lane with lane boundary lines. The lane between the lines is colored in green and data about curvature and distance from the center is displayed on top left of video.
 
 ---
 
