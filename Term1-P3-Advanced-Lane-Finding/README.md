@@ -148,7 +148,7 @@ Here the idea is to take the measurements of where the lane lines are and estima
 
 I performed this calculation in code section titled "Measure Curvature of each lane line" in the jupyter notebook. The formula used to calculate is mentioned in the lesson:
 
-f(y) = A<sup>y</sup>(2)+By+C
+f(y) = Ay<sup>2</sup>+By+C
 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
