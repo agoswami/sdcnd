@@ -187,7 +187,7 @@ I have implemented the function `draw_lane` in the jupyter notebook in code sect
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's final project video [project-video]
+Here's final [project-video]
 
 The final project video shows the identified lane with lane boundary lines. The lane between the lines is colored in green and data about curvature and distance from the center is displayed on top left of video.
 
@@ -198,3 +198,41 @@ The final project video shows the identified lane with lane boundary lines. The 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.
+
+The approach, I took which led to lanes being identified on project video is following:
+
+###### a. For each image in video, apply undistortion function.
+
+###### b. Then, apply color and gradient pipeline to convert it to greyscale with highlighted lane lines.
+
+###### c. Then, apply perspective transform function to convert it to top-down view.
+
+###### d. Then, use the object which represent left lane line and right lane line from the line class, which i defined before in code section "Define a class to receive the parameters of each line detection". Initially, these line objects are initialized to defaults.
+
+###### e. Use, the following algorithm:
+if both left and right lines were detected in previous frame, use `polyfit_using_prev_fit` function (which will use previous best fit lines), otherwise use sliding window to find new lane lines from scratch.
+
+In either case you will get left lane line and right lane line. Add, these to the list of lines in both left and right line objects.
+
+Then, draw the current best fit if it exists
+
+else, return the exisiting image
+
+Few of the scenarios, where pipeline will fail:
+
+1. When there is difference the color inside the lane boundary, for example in case of new road construction.
+
+2. When the lane lines sometimes go out of the range from the camera, meaning the left or right lane boundaries go out of bounda from the camera view.
+
+3. When the turn on the road are very steep, and turns are going upwards with road elevation or going fownwards with road degradation.
+
+
+To make it more robust, we can try following:
+
+1. We need to find a better way to highlight lane lines for gradaded coloring of lanes, or try using the boundary of pixel values when they can fit a polynomial curve.
+
+2. We to get activation from all the three sides of camera to identify left and right lane boundaries.
+
+3. We need to identify lane lines which double yellow lane line markers and solid white lane line markers.
+
+
