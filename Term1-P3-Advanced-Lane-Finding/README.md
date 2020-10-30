@@ -29,6 +29,7 @@ The goals / steps of this project are the following:
 [polyfit-isolation]: ./images/test_image-polyfit-isolation.png "Polyfit of Lane Lines in Isolation"
 [draw-lane-lines1]: ./images/test_image-draw-lane-lines1.png "Draw lane line on original image"
 [draw-lane-lines2]: ./images/test_image-draw-lane-lines2.png "Draw lane line and data on original image"
+[project-video]: ./videos/project_video_output.mp4 "Final project output video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -176,7 +177,7 @@ I have implemented the function `draw_lane` in the jupyter notebook in code sect
 
 ![draw-lane-lines1][draw-lane-lines1]
 
-##### d. The following output is after lane curvature and distance from center data is super-imposed on the images in step c.
+##### d. The following output is after lane curvature and distance from center data is super-imposed on the images in step c. The function to perform the data calculation is mentioned in code section titled "Draw radius of curvature and distance from center of lane onto the image" in the jupyter notebook.
 
 ![draw-lane-lines2][draw-lane-lines2]
 
@@ -186,9 +187,9 @@ I have implemented the function `draw_lane` in the jupyter notebook in code sect
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
+The image processing pipeline that was established to find the lane lines in images successfully processes the video. The output here should be a new video where the lanes are identified in every frame, and outputs are generated regarding the radius of curvature of the lane and vehicle position within the lane. The pipeline should correctly map out curved lines and not fail when shadows or pavement color changes are present. The output video should be linked to in the writeup and/or saved and submitted with the project.
 
-
-Here's a [link to my video result](./project_video.mp4)
+Here's a [project-video]
 
 ---
 
