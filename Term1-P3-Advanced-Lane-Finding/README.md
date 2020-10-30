@@ -146,11 +146,17 @@ The following picture is visualization of above in isolation from our example im
 
 Here the idea is to take the measurements of where the lane lines are and estimate how much the road is curving and where the vehicle is located with respect to the center of the lane. The radius of curvature may be given in meters assuming the curve of the road follows a circle. For the position of the vehicle, you may assume the camera is mounted at the center of the car and the deviation of the midpoint of the lane from the center of the image is the offset you're looking for. As with the polynomial fitting, convert from pixels to meters.
 
-I performed this calculation in code section titled "Measure Curvature of each lane line" in the jupyter notebook. The formula used to calculate is mentioned in the lesson:
+I performed this calculation in code section titled "Measure Curvature of each lane line" in the jupyter notebook. The formula used to calculate is mentioned in the lesson, and written below:
 
 f(y) = Ay<sup>2</sup>+By+C
 
 R <sub>curve</sub> = (1+(2Ay+B)<sup>2</sup>) <sup>3/2</sup> / |2A|
+
+Mesured curvature comes out to be: left: 1155.65 right: 1073.58 pixels
+
+Another set of calculations is performed to find curvature in real world, with code in section titled "Measure curvature of each line in real world". Following is the value of left lane line curvature, right lane line curvature and distance from center for example image:
+
+1354.25m, 1021.10m, -0.27 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
