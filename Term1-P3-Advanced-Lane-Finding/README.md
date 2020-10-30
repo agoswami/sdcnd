@@ -27,6 +27,8 @@ The goals / steps of this project are the following:
 [sliding-window]: ./images/test_image-sliding-window.png "Sliding Window of Lane Lines"
 [polyfit-lines]: ./images/test_image-polyfit-lines.png "Polyfit of Lane Lines"
 [polyfit-isolation]: ./images/test_image-polyfit-isolation.png "Polyfit of Lane Lines in Isolation"
+[draw-lane-lines1]: ./images/test_image-draw-lane-lines1.png "Draw lane line on original image"
+[draw-lane-lines2]: ./images/test_image-draw-lane-lines2.png "Draw lane line and data on original image"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -160,15 +162,31 @@ Another set of calculations is performed to find curvature in real world, with c
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
+The fit from the rectified image has been warped back onto the original image and plotted to identify the lane boundaries. This should demonstrate that the lane boundaries were correctly identified. An example image with lanes, curvature, and position from center should be included in the writeup (or saved to a folder) and submitted with the project.
+
 I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
 
-![alt text][image6]
+I have implemented the function `draw_lane` in the jupyter notebook in code section titled `Project your measyrement back down onto the road`. This function performs the following steps:
+
+##### a. Uses example image dimensions to create a black template to draw lane lines from warped perspective, using the functiond mentioned above.
+
+##### b. Then draws the image mentioned in step a. to original example image by unwarping the perspective.
+
+##### c. Then filling color between the left and right lane lines with green color.
+
+![draw-lane-lines1][draw-lane-lines1]
+
+##### d. The following output is after lane curvature and distance from center data is super-imposed on the images in step c.
+
+![draw-lane-lines2][draw-lane-lines2]
 
 ---
 
 ### Pipeline (video)
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
+
+
 
 Here's a [link to my video result](./project_video.mp4)
 
